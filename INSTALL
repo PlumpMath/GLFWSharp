@@ -1,0 +1,2 @@
+To build GLFWSharp on *nix:
+	run 'make'
