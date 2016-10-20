@@ -43,12 +43,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Data\libs32\libglfw.so" />
-    <None Include="Data\libs32\libglfw.dylib" />
-    <None Include="Data\libs32\glfw3.dll" />
-    <None Include="Data\libs64\libglfw.so" />
-    <None Include="Data\libs64\libglfw.dylib" />
-    <None Include="Data\libs64\glfw3.dll" />
+    <None Include="Data\libs32\libglfw.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\libs32\libglfw.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\libs32\glfw3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\libs64\libglfw.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\libs64\libglfw.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\libs64\glfw3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
