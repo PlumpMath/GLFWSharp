@@ -63,6 +63,8 @@ namespace GlfwSharp
 	{
 		public static bool init ()
 		{
+			string path = AppDomain.CurrentDomain.BaseDirectory;
+			System.IO.Directory.SetCurrentDirectory (path);
 			return Glfwint.glfwInit ();
 		}
 
