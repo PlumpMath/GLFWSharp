@@ -61,12 +61,6 @@ namespace GlfwSharp
 
 	public static partial class GLFW
 	{
-		public static bool init ()
-		{
-			string path = AppDomain.CurrentDomain.BaseDirectory;
-			System.IO.Directory.SetCurrentDirectory (path);
-			return Glfwint.glfwInit ();
-		}
 
 		public static GlfwVersion getVersion ()
 		{
@@ -83,11 +77,6 @@ namespace GlfwSharp
 		public static GLFWerrorfun setErrorCallback (GLFWerrorfun cbfun)
 		{
 			return Glfwint.setErrorCallback (cbfun);
-		}
-
-		public static void terminate ()
-		{
-			Glfwint.terminate ();
 		}
 
 		public static GLFWcursor createCursor (GLFWimage image, int x, int y)

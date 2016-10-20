@@ -24,5 +24,18 @@ namespace GlfwSharp
 		[DllImport ("glfw.dll", EntryPoint="glfwSetTime")]
 		public static extern void setTime (double time);
 	}
+
+	public static partial class GLFW
+	{
+		public static bool init ()
+		{
+			return Glfwint.glfwInit ();
+		}
+
+		public static void terminate ()
+		{
+			Glfwint.terminate ();
+		}
+	}
 }
 
